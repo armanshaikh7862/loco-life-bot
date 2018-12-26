@@ -1,1 +1,2 @@
-work on pydroid 3 latest version
+discord.py
+asyncio
