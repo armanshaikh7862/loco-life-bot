@@ -3,7 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='+')
 
 @bot.event
 async def on_ready():
@@ -27,10 +27,10 @@ async def loco(ctx):
 	print("hu")
 @bot.command(pass_context=True)
 async def create(ctx):
-	await bot.say("/locolife (amount) (refer code)")
+	await bot.say("+locolife (amount) (refer code)")
 @bot.command(pass_context=True)
 async def lf(ctx):
-	await bot.say("correct use (/lf (amount) (refer code))")
+	await bot.say("correct use (+lf (amount) (refer code))")
 
 @bot.command(pass_context=True)
 async def info(ctx, user: discord.Member):
@@ -51,5 +51,5 @@ async def on_ready():
 	print(bot.user.name + "#" + bot.user.discriminator)
 	print(bot.user.id)
 	print('------')
-	await bot.change_presence(game=discord.Game(name="with locolives/creator CHETAN"))
-bot.run('')
+	await bot.change_presence(game=discord.Game(name="with locolives/creator ARMAN"))
+bot.run('NjA4MjY0MDcwMzUyODYzMjMz.XUsDhw.C-_a1ezj1G8zdljFBPXj0DG2a3s')
